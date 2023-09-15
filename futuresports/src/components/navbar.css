@@ -1,32 +1,3 @@
-.navbar {
-  background-color: #333;
-  color: white; 
-  padding: 10px 0;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  justify-content: center; 
-}
-
-.nav-item {
-  margin: 0 15px;
-  cursor: pointer;
-}
-
-
-.nav-item:hover {
-  text-decoration: underline;
-}
-li{
-  list-style: none;
-}
-
-nav a{
-    color: #FFFFFF;
-}
-
 nav{
     background-color: black;
     width: 100%;
@@ -65,4 +36,38 @@ nav ul li a:hover {
     text-decoration: none;
     border-radius: 5px;
 }
-  
+
+#search-bar {
+  position: absolute; /* Absolute positioning to overlay */
+  top: 10px; /* Adjust the top position as needed */
+  right: 10px; 
+  z-index: 999; 
+}
+
+
+#search-bar form {
+  display: flex;
+  align-items: center;
+}
+
+#search-bar input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+#search-bar button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#search-results {
+  margin-top: 50px;
+}
+
+

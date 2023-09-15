@@ -2,14 +2,19 @@ import React from 'react';
 import Navbar from './components/navbar';
 import './App.css';
 
+
 function App() {
+
   return (
     <div className="App">
       <Navbar />
       <div>
-        <h1 id="welcome">Section 1</h1>
-      
-        <h1 id="events">Section 2</h1>
+        <h1 id="welcome">Welcome</h1>
+        <p>This is the content of Section 2.</p>
+        <p>This is the content of Section 2.</p>
+        <p>This is the content of Section 2.</p>
+        <p>This is the content of Section 2.</p>
+        <h1 id="events">Events</h1>
         <p>This is the content of Section 2.</p>
         <p>This is the content of Section 2.</p>
         <p>This is the content of Section 2.</p>
@@ -35,6 +40,7 @@ function App() {
 
         <h1 id="contact">Section 3</h1>
         <p>This is the content of Section 3.</p>
+        
       </div>
     </div>
   );
