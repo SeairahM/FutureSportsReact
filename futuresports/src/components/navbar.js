@@ -56,11 +56,10 @@ const Navbar = () => {
         </div>
       </nav>
       <div>
-      <button onClick={handleSearch}>Search</button>
       {showResults && (
         <div>
           <button onClick={handleClose} className="close-button">
-            &#10006; {/* Unicode character for "X" */}
+            &#10006; 
           </button>
           <ul className="searchresults">
             {searchResults.map((result, index) => (
@@ -69,7 +68,6 @@ const Navbar = () => {
           </ul>
         </div>
       )}
-        
       </div>
     </div>
   );

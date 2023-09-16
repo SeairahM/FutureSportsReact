@@ -11,6 +11,50 @@ h3{
 }
 p{
   font-size: 12px;
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+footer{
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: black;
+  height: 50px;
+  width: 100%;
+}
+
+footer p{
+  padding-left: 30px;
+  width: 10%;
+  font-family: "Inter", "Arial", "sans-serif";
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+footer ul{
+  width: 60%;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 10px;
+}
+
+footer li{
+  display: inline;
+  color: #FFFFFF;
+  font-size: 12px;
+  margin-right: 10%;
+  margin-left: 0;
+  font-family: "Inter", "Arial", "sans-serif";
+  padding-left: 7%;
+} 
+
+footer button{
+  background-color: #000000;
+  border: none;
+  color: white;
+}
+footer button:hover{
+  background-color: rgb(154, 153, 153);
 }
 
 .App-logo {

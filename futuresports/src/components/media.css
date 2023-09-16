@@ -4,7 +4,7 @@
     padding-top: 100px;
 
   }
-
+  
   .vid {
    flex: 70%;
    width: 100%;
@@ -17,7 +17,7 @@
   .fb {
     flex: 30%;
     width: 100%;
-    height: 500px;
+    height: 50%;
     box-sizing: border-box;
     overflow: hidden;
   }

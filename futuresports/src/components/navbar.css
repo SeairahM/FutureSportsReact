@@ -79,23 +79,23 @@ nav li button:hover{
 
 .searchresults{
   z-index: 1;
-  position:absolute;
+  position:fixed;
   color: white;
   background-color: rgb(28, 26, 26);
-  margin-top: 25px;
+  margin-top: 45px;
   border-radius: 2%;
   width: 20%;
   height: 20%;
   right: 0;
+  list-style: none;
+  padding-top: 15px;
+  align-items: left;
 }
 
-.searchresults ul{
-  margin-top: 20px;
-}
 
 .close-button {
-  position: absolute;
-  top: 50px; 
+  position: fixed;
+  top: 53px; 
   right: 10px;
   background-color: red;
   color: white;
