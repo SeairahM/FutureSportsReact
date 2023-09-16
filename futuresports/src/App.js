@@ -19,8 +19,8 @@ function App() {
         <Events />
         <Media />
 
-        <h2 id="about">About</h2>
-        <p id="aboutp">
+        <h2 id="about" style={{marginTop:'100px'}}>About</h2>
+        <p id="aboutp" style={{marginBottom:'100px'}}>
           Whether you're an experienced rower seeking a new imaginary challenge
           or a complete novice eager to dip your oars into the waters of
           imagination, Future Sports Rowing Club welcomes you. We organize a
@@ -35,6 +35,14 @@ function App() {
 
         <ContactForm />
       </div>
+      <footer>
+        <p>	&copy; Future Sports 2023</p>
+        <ul>
+            <li><button className="privacy" id="privacy">Privacy Statement</button></li>
+            <li><button className="contact" id="contact">Contact</button></li>
+            <li><button className="tac" id="tac">Terms and Conditions</button></li>
+        </ul>
+    </footer>
     </div>
   );
 }

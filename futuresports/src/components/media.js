@@ -18,8 +18,8 @@ const Media = () => {
   }, []);
 
   return (
-    <div class="mediazone">
-      <div class="vid">
+    <div className="mediazone">
+      <div className="vid">
         <video controls width="100%" height="">
           <source src={movie} type="video/mp4" />
           <source src="movie.ogg" type="video/ogg" />
@@ -28,7 +28,7 @@ const Media = () => {
 
       <div className="fb">
         <div
-          className="fb-post" SameSite='Strict'
+          className="fb-post"
           data-href="https://www.facebook.com/RowingVictoria/posts/pfbid0aqVa5AdRzAV8GVc1pBkRRwb4zbqMs7rx6YgFiAqyfx7B8F4PUfKHm5h5JgePz1b3l"
           data-width="100%"
           data-show-text="true"
