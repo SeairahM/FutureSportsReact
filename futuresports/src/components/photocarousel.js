@@ -35,14 +35,41 @@ const PhotoCarousel = () => {
 
   return (
     <div className="photo-carousel">
-      <button onClick={goToPrevious}>Previous</button>
+      <button onClick={goToPrevious}
+      style={{
+        fontSize:'30px',
+        fontWeight: 'bold',
+        background: 'rgba(0, 0, 0, 0.3)',
+        color: 'white',
+        border: 'none',
+        cursor: 'pointer',
+        outline: 'none',
+        position: 'absolute',
+        top: '50%',
+        transform: 'translateY(-50%)',}}> &#10094;</button>
       <img
         className="carousel-image"
         src={images[currentIndex].url}
-        alt={images[currentIndex].description}
+        alt={images[currentIndex].description} 
+        style={{   
+          width: '100%',
+          height: '700px',
+          border: '2px solid black' // Example: Add a red border
+        }}
       />
-      <p>{images[currentIndex].description}</p>
-      <button onClick={goToNext}>Next</button>
+      <button onClick={goToNext} style={{
+        fontSize:'30px',
+        fontWeight: 'bold',
+        background: 'rgba(0, 0, 0, 0.3)',
+        color: 'white',
+        border: 'none',
+        cursor: 'pointer',
+        outline: 'none',
+        position: 'absolute',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        right: '0',
+      }}>&#10095;</button>
     </div>
   );
 };
