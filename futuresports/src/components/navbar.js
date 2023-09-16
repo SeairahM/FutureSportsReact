@@ -10,6 +10,7 @@ const Navbar = () => {
     }
   };
   const [searchResults, setSearchResults] = useState([]);
+  const [showResults, setShowResults] = useState(false);
 
   const searchitems = ["welcome", "about", "events", "contact"];
 
@@ -18,12 +19,19 @@ const Navbar = () => {
     const results = [];
 
     for (const item of searchitems) {
-      if (item.includes(q)) {    
+      if (item.includes(q)) {
         results.push(item);
       }
     }
-
+    
     setSearchResults(results);
+    setTimeout(() => {
+      setShowResults(true);
+    }, 1000); //
+  };
+
+  const handleClose = () => {
+    setShowResults(false);
   };
 
   return (
@@ -43,14 +51,25 @@ const Navbar = () => {
             <button onClick={() => scrollToSection("contact")}>Contact</button>
           </li>
         </ul>
-        <SearchBar onSearch={handleSearch} />
+        <div>
+          <SearchBar onSearch={handleSearch} />
+        </div>
       </nav>
       <div>
-      <ul>
-          {searchResults.map((result, index) => (
-            <li key={index}>{result}</li>
-          ))}
-        </ul>
+      <button onClick={handleSearch}>Search</button>
+      {showResults && (
+        <div>
+          <button onClick={handleClose} className="close-button">
+            &#10006; {/* Unicode character for "X" */}
+          </button>
+          <ul className="searchresults">
+            {searchResults.map((result, index) => (
+              <li key={index}>{result}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+        
       </div>
     </div>
   );

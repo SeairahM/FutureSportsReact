@@ -57,7 +57,6 @@ const PhotoCarousel = () => {
           border: '2px solid black' // Example: Add a red border
         }}
       />
-      <p>{images[currentIndex].description}</p>
       <button onClick={goToNext} style={{
         fontSize:'30px',
         fontWeight: 'bold',

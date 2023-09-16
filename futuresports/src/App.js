@@ -14,12 +14,12 @@ function App() {
         <h1 id="welcome">Future Sports</h1>
         <p>Row your way, every day, with Future Sports.</p>
         
-        <h1 id="events">Events</h1>
+        <h2 id="events">Events</h2>
      
-        <h1 id="about">Section 3</h1>
+        <h2 id="about">About</h2>
         <p>This is the content of Section 3.</p>
 
-        <h1 id="contact">Section 3</h1>
+        <h2 id="contact">Contacts</h2>
         <p>This is the content of Section 3.</p>
         
       </div>
