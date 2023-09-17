@@ -5,6 +5,7 @@ import PhotoCaraousel from "./components/photocarousel";
 import Events from "./components/events";
 import Media from "./components/media";
 import ContactForm from "./components/contact";
+import ErrorBoundary from './ErrorBoundary';
 
 function App() {
   const aboutMsg = `Whether youre an experienced rower seeking a new 
@@ -29,7 +30,10 @@ function App() {
         </h1>
         <p>Row your way, every day, with Future Sports.</p>
         <Events />
+        <ErrorBoundary>
         <Media />
+        </ErrorBoundary>
+       
 
         <h2 id="about" style={{marginTop:'100px'}}>About</h2>
         <p id="aboutp" style={{marginBottom:'100px'}}>
