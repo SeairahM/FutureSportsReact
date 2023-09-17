@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import './contact.css';
+import React, { Component } from "react";
+import "./contact.css";
 
 class ContactForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
       isOpen: false,
-      fname: '',
-      lname: '',
-      cnumber: '',
-      email: '',
-      message: '',
+      fname: "",
+      lname: "",
+      cnumber: "",
+      email: "",
+      message: "",
       submitted: false,
     };
   }
@@ -28,19 +28,36 @@ class ContactForm extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    // You can add your submission logic here
-    // For example, you can send the form data to a server or perform client-side validation.
-    // Once the submission is complete, you can update the state to show the "Thank You!" message.
-    this.setState({ submitted: true });
+    try {
+      const { fname, lname, cnumber, email, message } = this.state;
+      if (!fname || !lname || !cnumber || !email || !message) {
+        alert("Please fill out all required fields.");
+        return;
+      }
+
+      if (!/^\d{10}$/.test(cnumber)) {
+        alert("Invalid contact number. Please enter a 10-digit number.");
+        return false;
+      }
+
+      if (!/\S+@\S+\.\S+/.test(email)) {
+        alert("Invalid email format");
+        return false;
+      }
+      this.setState({ submitted: true });
+    } catch (e) {
+      alert("An error has been caught: " + e.message);
+    }
   };
 
   render() {
-    const { isOpen, fname, lname, cnumber, email, message, submitted } = this.state;
+    const { isOpen, fname, lname, cnumber, email, message, submitted } =
+      this.state;
 
     return (
       <div className="contactsection" id="contactsection">
         <div className="tab" onClick={this.handleTabClick}>
-          {isOpen ? 'Close Form' : 'Contact Form'}
+          {isOpen ? "Close Form" : "Contact Form"}
         </div>
         {isOpen && (
           <>
@@ -52,7 +69,8 @@ class ContactForm extends Component {
               </div>
             ) : (
               <form id="contactform" onSubmit={this.handleSubmit}>
-                <label htmlFor="fname">First name:</label><br />
+                <label htmlFor="fname">First name:</label>
+                <br />
                 <input
                   type="text"
                   id="fname"
@@ -60,8 +78,10 @@ class ContactForm extends Component {
                   placeholder="Required"
                   value={fname}
                   onChange={this.handleInputChange}
-                /><br />
-                <label htmlFor="lname">Last name:</label><br />
+                />
+                <br />
+                <label htmlFor="lname">Last name:</label>
+                <br />
                 <input
                   type="text"
                   id="lname"
@@ -69,8 +89,10 @@ class ContactForm extends Component {
                   placeholder="Required"
                   value={lname}
                   onChange={this.handleInputChange}
-                /><br />
-                <label htmlFor="cnumber">Contact number:</label><br />
+                />
+                <br />
+                <label htmlFor="cnumber">Contact number:</label>
+                <br />
                 <input
                   type="number"
                   id="cnumber"
@@ -78,8 +100,10 @@ class ContactForm extends Component {
                   placeholder="Required"
                   value={cnumber}
                   onChange={this.handleInputChange}
-                /><br />
-                <label htmlFor="email">Enter your email:</label><br />
+                />
+                <br />
+                <label htmlFor="email">Enter your email:</label>
+                <br />
                 <input
                   type="email"
                   id="email"
@@ -87,8 +111,10 @@ class ContactForm extends Component {
                   placeholder="Required"
                   value={email}
                   onChange={this.handleInputChange}
-                /><br />
-                <label htmlFor="message">Question</label><br />
+                />
+                <br />
+                <label htmlFor="message">Question</label>
+                <br />
                 <textarea
                   id="message"
                   name="message"
