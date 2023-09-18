@@ -68,10 +68,11 @@ class ContactForm extends Component {
                 <p>Your question has been submitted.</p>
               </div>
             ) : (
-              <form id="contactform" onSubmit={this.handleSubmit}>
+              <form id="contactform" name="contactform" role="contactform" onSubmit={this.handleSubmit}>
                 <label htmlFor="fname">First name:</label>
                 <br />
                 <input
+                  role="fname" 
                   type="text"
                   id="fname"
                   name="fname"
@@ -115,7 +116,8 @@ class ContactForm extends Component {
                 <br />
                 <label htmlFor="message">Question</label>
                 <br />
-                <textarea
+                <textarea 
+                  role="textbox"
                   id="message"
                   name="message"
                   rows="10"
