@@ -30,9 +30,9 @@ function App() {
         </h1>
         <p>Row your way, every day, with Future Sports.</p>
         <Events />
-        <ErrorBoundary>
+        {/* <ErrorBoundary>
         <Media />
-        </ErrorBoundary>
+        </ErrorBoundary> */}
        
 
         <h2 id="about" style={{marginTop:'100px'}}>About</h2>
