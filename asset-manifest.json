@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/github-pages-app/static/css/main.21b6c591.css",
+    "main.js": "/github-pages-app/static/js/main.febef910.js",
+    "static/media/rowingvid.mp4": "/github-pages-app/static/media/rowingvid.666e766e02d0a894bb95.mp4",
+    "static/media/aaron-burden.jpg": "/github-pages-app/static/media/aaron-burden.979b966c15c61acdbf2c.jpg",
+    "static/media/mitchell-luo.jpg": "/github-pages-app/static/media/mitchell-luo.32a2d52df258130d7bdd.jpg",
+    "static/media/rhys-moult.jpg": "/github-pages-app/static/media/rhys-moult.d56e55e7e1bc7f80da91.jpg",
+    "index.html": "/github-pages-app/index.html",
+    "main.21b6c591.css.map": "/github-pages-app/static/css/main.21b6c591.css.map",
+    "main.febef910.js.map": "/github-pages-app/static/js/main.febef910.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21b6c591.css",
+    "static/js/main.febef910.js"
+  ]
+}
