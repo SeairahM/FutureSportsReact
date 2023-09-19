@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/FutureSportsReact/static/css/main.697e7e7b.css",
+    "main.css": "/FutureSportsReact/static/css/main.21b6c591.css",
     "main.js": "/FutureSportsReact/static/js/main.5b69a111.js",
     "static/media/rowingvid.mp4": "/FutureSportsReact/static/media/rowingvid.666e766e02d0a894bb95.mp4",
     "static/media/aaron-burden.jpg": "/FutureSportsReact/static/media/aaron-burden.979b966c15c61acdbf2c.jpg",
     "static/media/mitchell-luo.jpg": "/FutureSportsReact/static/media/mitchell-luo.32a2d52df258130d7bdd.jpg",
     "static/media/rhys-moult.jpg": "/FutureSportsReact/static/media/rhys-moult.d56e55e7e1bc7f80da91.jpg",
     "index.html": "/FutureSportsReact/index.html",
-    "main.697e7e7b.css.map": "/FutureSportsReact/static/css/main.697e7e7b.css.map",
+    "main.21b6c591.css.map": "/FutureSportsReact/static/css/main.21b6c591.css.map",
     "main.5b69a111.js.map": "/FutureSportsReact/static/js/main.5b69a111.js.map"
   },
   "entrypoints": [
-    "static/css/main.697e7e7b.css",
+    "static/css/main.21b6c591.css",
     "static/js/main.5b69a111.js"
   ]
 }
