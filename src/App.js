@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/navbar";
-import "./app.css";
+import "./App.css";
 import PhotoCaraousel from "./components/photocarousel";
 import Events from "./components/events";
 import Media from "./components/media";
